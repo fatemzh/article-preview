@@ -38,18 +38,16 @@
       </section>
       <section id="author">
         <img
-          id="img"
+          id="profile-img"
           src="/images/avatar-michelle.jpg"
           alt="Avatar of Michelle Appleton"
+          hidden
         />
-        <div id="author-infos">
+        <div id="author-infos" hidden>
           <p><span>Michelle Appleton</span></p>
-          <p>28 Jun 2020</p>
+          <p id="date">28 Jun 2020</p>
         </div>
-        <button id="share-btn" aria-label="Share this article">
-          <img src="/images/icon-share.svg" alt="Share icon" />
-        </button>
-        <div id="share-banner" aria-hidden="true" hidden>
+        <div id="share-banner" aria-hidden="true">
           <p><span>SHARE</span></p>
           <div id="icons">
             <a
@@ -74,6 +72,9 @@
               <img src="/images/icon-pinterest.svg" alt="Pinterest icon" />
             </a>
           </div>
+          <button id="share-btn" aria-label="Share this article">
+            <img src="/images/icon-share.svg" alt="Share icon" />
+          </button>
         </div>
       </section>
     </main>
