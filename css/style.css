@@ -75,9 +75,8 @@ main #description p {
 main #author {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-items: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 main #author #profile-img {
   height: 3em;
@@ -88,6 +87,9 @@ main #author #share-btn {
   border: none;
   width: 2.5rem;
   height: 2.5rem;
+  opacity: 50%;
+  background-color: var(--grayishBlue);
+  color: white;
 }
 main #author #author-infos p span {
   font-weight: 700;
@@ -99,10 +101,20 @@ main #author #author-infos #date {
 main #author #share-banner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: var(--darkGrayishBlue);
-  margin: 0;
-  padding: 0;
+  color: var(--white);
+  min-height: 4rem;
+  width: 100%;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+main #author #share-banner p span {
+  opacity: 30%;
+}
+main #author #share-banner #icons a {
+  margin: 0rem 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
