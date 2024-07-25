@@ -1,3 +1,4 @@
+/* style.css */
 *,
 *::before,
 *::after {
@@ -49,88 +50,89 @@ main {
   max-width: 374px;
   margin: auto auto;
   padding: 0;
+}
 
-  #img {
-    min-height: 12rem;
-    overflow: hidden;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+#img {
+  min-height: 12rem;
+  overflow: hidden;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
 
-    figure img {
-      width: 100%;
-      height: auto;
-    }
-  }
+figure img {
+  width: 100%;
+  height: auto;
+}
 
-  #description {
-    padding: 2rem 1rem;
+#description {
+  padding: 2rem 1rem;
+}
 
-    h1 {
-      font-size: 1em;
-      margin-bottom: 1rem;
-      color: var(--darkGrayishBlue);
-      font-weight: 800;
-    }
+#description h1 {
+  font-size: 1em;
+  margin-bottom: 1rem;
+  color: var(--darkGrayishBlue);
+  font-weight: 800;
+}
 
-    p {
-      color: var(--grayishBlue);
-    }
-  }
+#description p {
+  color: var(--grayishBlue);
+}
 
-  #author {
-    display: flex;
-    flex-direction: row;
-    justify-items: space-between;
-    align-items: center;
+/* style.css */
+.hidden {
+  display: none;
+}
 
-    #profile-img {
-      height: 3em;
-      border-radius: 50%;
-    }
+#before-click {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
-    #share-btn {
-      border-radius: 50%;
-      border: none;
-      width: 2.5rem;
-      height: 2.5rem;
-      opacity: 50%;
-      background-color: var(--grayishBlue);
-      color: white;
-    }
+#profile-img {
+  height: 3em;
+  border-radius: 50%;
+}
 
-    #author-infos {
-      p span {
-        font-weight: 700;
-      }
+#share-btn {
+  border-radius: 50%;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--grayishBlue);
+  color: white;
+  cursor: pointer;
+}
 
-      #date {
-        margin-top: 0.4rem;
-        color: var(--grayishBlue);
-      }
-    }
+#author-infos p span {
+  font-weight: 700;
+}
 
-    #share-banner {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-      background-color: var(--darkGrayishBlue);
-      color: var(--white);
-      min-height: 4rem;
-      width: 100%;
-      border-bottom-left-radius: 0.5em;
-      border-bottom-right-radius: 0.5em;
+#date {
+  margin-top: 0.4rem;
+  color: var(--grayishBlue);
+}
 
-      p span {
-        opacity: 30%;
-      }
+#share-banner {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--darkGrayishBlue);
+  color: var(--white);
+  min-height: 4rem;
+  width: 100%;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
 
-      #icons a{
-        margin: 0rem 0.2rem;
-      }
-    }
+#share-banner p span {
+  opacity: 30%;
+}
 
-
-  }
-
+#icons a {
+  margin: 0rem 0.2rem;
 }

@@ -22,7 +22,10 @@
     <main id="main-content" class="container" role="main">
       <div id="img">
         <figure>
-          <img src="/images/drawers.jpg" alt="A drawer with decorations" />
+          <img
+            src="/images/drawers.jpg"
+            alt="A drawer with decorations"
+          />
         </figure>
       </div>
       <section id="description">
@@ -37,17 +40,21 @@
         </p>
       </section>
       <section id="author">
-        <img
-          id="profile-img"
-          src="/images/avatar-michelle.jpg"
-          alt="Avatar of Michelle Appleton"
-          hidden
-        />
-        <div id="author-infos" hidden>
-          <p><span>Michelle Appleton</span></p>
-          <p id="date">28 Jun 2020</p>
+        <div id="before-click">
+          <img
+            id="profile-img"
+            src="/images/avatar-michelle.jpg"
+            alt="Avatar of Michelle Appleton"
+          />
+          <div id="author-infos">
+            <p><span>Michelle Appleton</span></p>
+            <p id="date">28 Jun 2020</p>
+          </div>
+          <button id="share-btn" aria-label="Share this article">
+            <img src="/images/icon-share.svg" alt="Share icon" />
+          </button>
         </div>
-        <div id="share-banner" aria-hidden="true">
+        <div id="share-banner" aria-hidden="true" class="hidden">
           <p><span>SHARE</span></p>
           <div id="icons">
             <a
@@ -72,12 +79,9 @@
               <img src="/images/icon-pinterest.svg" alt="Pinterest icon" />
             </a>
           </div>
-          <button id="share-btn" aria-label="Share this article">
-            <img src="/images/icon-share.svg" alt="Share icon" />
-          </button>
         </div>
       </section>
     </main>
-    <script src="./script.js" defer></script>
+    <script src="/script.js" defer></script>
   </body>
 </html>

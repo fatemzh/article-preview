@@ -1,3 +1,4 @@
+/* style.css */
 *,
 *::before,
 *::after {
@@ -50,56 +51,73 @@ main {
   margin: auto auto;
   padding: 0;
 }
-main #img {
+
+#img {
   min-height: 12rem;
   overflow: hidden;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
-main #img figure img {
+
+figure img {
   width: 100%;
   height: auto;
 }
-main #description {
+
+#description {
   padding: 2rem 1rem;
 }
-main #description h1 {
+
+#description h1 {
   font-size: 1em;
   margin-bottom: 1rem;
   color: var(--darkGrayishBlue);
   font-weight: 800;
 }
-main #description p {
+
+#description p {
   color: var(--grayishBlue);
 }
-main #author {
+
+/* style.css */
+.hidden {
+  display: none;
+}
+
+#before-click {
   display: flex;
   flex-direction: row;
-  justify-items: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 1rem;
 }
-main #author #profile-img {
+
+#profile-img {
   height: 3em;
   border-radius: 50%;
 }
-main #author #share-btn {
+
+#share-btn {
   border-radius: 50%;
   border: none;
   width: 2.5rem;
   height: 2.5rem;
-  opacity: 50%;
   background-color: var(--grayishBlue);
   color: white;
+  cursor: pointer;
 }
-main #author #author-infos p span {
+
+#author-infos p span {
   font-weight: 700;
 }
-main #author #author-infos #date {
+
+#date {
   margin-top: 0.4rem;
   color: var(--grayishBlue);
 }
-main #author #share-banner {
-  display: flex;
+
+#share-banner {
+  display: none;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -110,10 +128,12 @@ main #author #share-banner {
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
-main #author #share-banner p span {
+
+#share-banner p span {
   opacity: 30%;
 }
-main #author #share-banner #icons a {
+
+#icons a {
   margin: 0rem 0.2rem;
 }
 
