@@ -1,10 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --darkGrayishBlue: hsl(217, 19%, 35%);
+  --darkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(30, 10%, 34%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+  --primary-color: var(--eggshell);
+  --font-family: 'Manrope', sans-serif;
+  --font-size: 16px;
+}
+
 body {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 400;
+  margin: 0;
+  height: 100vh;
+  background-color: var(--lightGrayishBlue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 2rem;
+  margin: 4rem 1.5rem;
+  max-width: 374px;
+  height: 100%;
+
+  #img {
+    min-height: 13rem;
+    overflow: hidden;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+    figure img {
+      width: 100%;
+      height: auto;
+    }
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
+
+  #description {
+    padding: 2rem;
+
+    h1 {
+      font-size: 1em;
+      margin-bottom: 1em;
+      color: var(--darkGrayishBlue);
+      font-weight: 800;
+    }
+
+    p {
+      color: var(--grayishBlue);
+    }
   }
-  
+
+  #author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    img {
+      height: 3em;
+      border-radius: 50%;
+    }
+  }
+
+}
