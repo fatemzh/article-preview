@@ -40,13 +40,14 @@ h5,
 h6 {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
+  cursor: pointer;
 }
 
 main {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0rem 0rem;
   max-width: 374px;
   margin: auto auto;
   padding: 0;
@@ -77,34 +78,54 @@ figure img {
 
 #description p {
   color: var(--grayishBlue);
+  opacity: 50%;
 }
 
-/* style.css */
-.hidden {
-  display: none;
+#author {
+  position: relative;
 }
 
-#before-click {
+#before-click,
+#after-click {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 1rem;
+  position: absolute;
+  min-height: 5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+
+#before-click {
+  background-color: white;
+
+}
+
+#after-click {
+  visibility: hidden;
 }
 
 #profile-img {
-  height: 3em;
+  height: 2.5em;
   border-radius: 50%;
 }
 
-#share-btn {
+#share-btn, #share-btn-banner {
   border-radius: 50%;
   border: none;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--grayishBlue);
-  color: white;
   cursor: pointer;
+}
+
+#share-btn:hover, #share-btn-banner:hover {
+  background-color: var(--darkGrayishBlue);
 }
 
 #author-infos p span {
@@ -114,22 +135,18 @@ figure img {
 #date {
   margin-top: 0.4rem;
   color: var(--grayishBlue);
+  opacity: 50%;
 }
 
-#share-banner {
-  display: none;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+#after-click {
   background-color: var(--darkGrayishBlue);
   color: var(--white);
   min-height: 4rem;
   width: 100%;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
+  margin: 0;
 }
 
-#share-banner p span {
+#after-click p span {
   opacity: 30%;
 }
 
