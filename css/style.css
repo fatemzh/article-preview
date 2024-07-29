@@ -47,22 +47,28 @@ main {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  border-radius: 1rem 1rem 0rem 0rem;
+  border-radius: 1rem;
   max-width: 374px;
   margin: auto auto;
   padding: 0;
 }
 
 #img {
-  min-height: 12rem;
+  height: 100%;
   overflow: hidden;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
 
+figure {
+  height: 100%;
+  margin: 0;
+}
+
 figure img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 #description {
@@ -77,12 +83,15 @@ figure img {
 }
 
 #description p {
-  color: var(--grayishBlue);
-  opacity: 50%;
+  color: var(--darkGrayishBlue);
+  opacity: 80%;
 }
 
 #author {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 #before-click,
@@ -91,21 +100,12 @@ figure img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  min-height: 5rem;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-}
-
-#before-click {
-  background-color: white;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 #after-click {
-  visibility: hidden;
+  display: none;
 }
 
 #profile-img {
@@ -113,7 +113,8 @@ figure img {
   border-radius: 50%;
 }
 
-#share-btn, #share-btn-banner {
+#share-btn,
+#share-btn-banner {
   border-radius: 50%;
   border: none;
   width: 2.5rem;
@@ -121,7 +122,8 @@ figure img {
   cursor: pointer;
 }
 
-#share-btn:hover, #share-btn-banner:hover {
+#share-btn:hover,
+#share-btn-banner:hover {
   background-color: var(--darkGrayishBlue);
 }
 
@@ -140,7 +142,7 @@ figure img {
   color: var(--white);
   min-height: 4rem;
   width: 100%;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 #after-click p span {
@@ -148,7 +150,66 @@ figure img {
 }
 
 #icons a {
-  margin: 0rem 0.2rem;
+  margin: 0 0.2rem;
+}
+
+#before-click {
+  display: flex;
+  justify-content: space-between;
+}
+
+#author-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#author-infos {
+  margin-left: 1rem;
+}
+
+@media (min-width: 1440px) {
+  main {
+    max-width: 700px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #img {
+    height: auto;
+    overflow: visible;
+    flex: 1;
+  }
+  figure {
+    height: 100%;
+  }
+  figure img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+  }
+  #right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+  }
+  #description h1 {
+    font-size: 1.45em;
+  }
+  #before-click {
+    display: flex;
+    justify-content: space-between;
+  }
+  #author-container {
+    display: flex;
+    flex-direction: row;
+  }
+  #author-infos {
+    margin-left: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,3 +12,10 @@ shareBtnBanner.addEventListener("click", () => {
     beforeClick.style.visibility = "visible";
     afterClick.style.visibility = "hidden";
 });
+
+// if(@media (min-width: 1440px)){
+//   afterClick.style.visibility = "hidden";
+//   shareBtn.onmouseover = () => {
+//     afterClick.style.visibility = "visible";
+//   }
+// }
