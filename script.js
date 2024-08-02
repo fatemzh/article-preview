@@ -4,14 +4,15 @@ const beforeClick = document.getElementById("before-click");
 const afterClick = document.getElementById("after-click");
 
 shareBtn.addEventListener("click", () => {
-    beforeClick.style.visibility = "hidden";
-    afterClick.style.visibility = "visible";
+    beforeClick.style.display = "none";
+    afterClick.style.display = "flex";  
 });
 
 shareBtnBanner.addEventListener("click", () => {
-    beforeClick.style.visibility = "visible";
-    afterClick.style.visibility = "hidden";
+    beforeClick.style.display = "flex";  // Or "block" depending on your layout needs
+    afterClick.style.display = "none";
 });
+
 
 // if(@media (min-width: 1440px)){
 //   afterClick.style.visibility = "hidden";
