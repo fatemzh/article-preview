@@ -227,14 +227,18 @@ p#description-p {
     position: absolute;
     display: none;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 10rem;
+    width: 11rem;
     border-radius: 0.5rem;
     background-color: var(--darkGrayishBlue);
     height: 2rem;
     margin-top: 1rem;
     z-index: 10;
+    padding: 1.5rem;
+    bottom: 90%; 
+    left: 90%; 
+    transform: translateX(-50%);
   }
 
   #after-click-desktop img {
@@ -253,5 +257,6 @@ p#description-p {
 
   #share-btn:hover + #after-click-desktop {
     display: flex;
+    top: 10;
   }
 }

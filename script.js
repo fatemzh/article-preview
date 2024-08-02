@@ -9,12 +9,7 @@ function updateView() {
     shareBtn.addEventListener("mouseover", () => {
       afterClickDesktop.style.display = "flex";
     });
-
-    shareBtn.addEventListener("mouseout", () => {
-      afterClickDesktop.style.display = "none";
-    });
   } else {
-
     shareBtn.addEventListener("click", () => {
       beforeClick.style.visibility = "hidden";
       afterClick.style.visibility = "visible";
@@ -25,7 +20,7 @@ function updateView() {
     shareBtnBanner.addEventListener("click", () => {
       beforeClick.style.visibility = "visible";
       afterClick.style.visibility = "hidden";
-      beforeClick.style.display = "flex"; 
+      beforeClick.style.display = "flex";
       afterClick.style.display = "none";
     });
   }
