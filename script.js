@@ -4,12 +4,28 @@ const beforeClick = document.getElementById("before-click");
 const afterClick = document.getElementById("after-click");
 const afterClickDesktop = document.getElementById("after-click-desktop");
 
+function handleDocumentClick(event) {
+  if (!shareBtn.contains(event.target) && !afterClickDesktop.contains(event.target)) {
+    afterClickDesktop.style.display = "none";
+  }
+}
+
 function updateView() {
   if (window.innerWidth >= 1440) {
-    shareBtn.addEventListener("mouseover", () => {
+    // Reset the state for desktop mode
+    afterClick.style.display = "none";
+    afterClickDesktop.style.display = "none";
+    
+    shareBtn.addEventListener("click", () => {
       afterClickDesktop.style.display = "flex";
     });
+
+    document.addEventListener("click", handleDocumentClick);
   } else {
+    // Reset the state for mobile mode
+    document.removeEventListener("click", handleDocumentClick);
+    afterClickDesktop.style.display = "none";
+    
     shareBtn.addEventListener("click", () => {
       beforeClick.style.visibility = "hidden";
       afterClick.style.visibility = "visible";
