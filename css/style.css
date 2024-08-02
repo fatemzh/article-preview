@@ -102,7 +102,8 @@ p#description-p {
   border-bottom-right-radius: 1rem;
 }
 
-#after-click {
+#after-click,
+#after-click-desktop {
   display: none;
 }
 
@@ -208,6 +209,25 @@ p#description-p {
   }
   #author-infos {
     margin-left: 1rem;
+  }
+  #after-click-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10rem;
+    border-radius: 0.5rem;
+    background-color: var(--darkGrayishBlue);
+    height: 2rem;
+    margin-top: 1rem;
+  }
+  #after-click-desktop img {
+    height: 0.8rem;
+  }
+  #after-click-desktop p span {
+    color: var(--lightGrayishBlue);
+    opacity: 50%;
+    font-size: 1rem;
   }
 }
 
